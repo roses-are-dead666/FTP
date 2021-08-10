@@ -1,0 +1,112 @@
+html {
+    scroll-behavior: smooth;  
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    cursor: url(images/cursor.cur),progress!important;
+    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 50px;
+    margin: 0 auto;
+    cursor: url(images/cursor.cur),progress!important;
+}
+
+.header {
+    padding: 30px 0;
+    background: transparent;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    cursor: url(images/cursor.cur),progress!important;
+}
+
+.headerLogo {
+    max-width: 100%;
+    cursor: pointer;
+    cursor: url(images/cursor.cur),progress!important;
+}
+
+.headerLogo img {
+    display: block;
+    max-width: 200px;
+}
+
+.headerInner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.navLink {
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #333;
+    cursor: url(images/cursor.cur),progress!important;
+}
+
+.navLink:hover {
+    color: #000;
+}
+
+
+.marketImg {
+    display: block;
+    max-width: 100%;
+    height: 220px;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.introInner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.introItem {
+    width: 25%;
+}
+
+.introItem img {
+    height: 220px;
+}
+
+
+
+
+
+
+
+
+

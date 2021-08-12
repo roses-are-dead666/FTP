@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav {
-    font-size: 20px;
+    font-size: 18px;
     text-transform: uppercase;
 }
 
@@ -78,32 +78,118 @@ h1, h2, h3, h4, h5, h6 {
     color: #000;
 }
 
-
-.marketImg {
-    display: block;
-    max-width: 100%;
-    height: 220px;
-}
-
-.section {
-    padding: 100px 0;
-}
-
-.introInner {
+.shop {
     display: flex;
     justify-content: space-between;
+    text-align: center;
 }
 
-.introItem {
-    width: 25%;
+.shopLast {
+    padding-bottom: 100px;
 }
 
-.introItem img {
+.shopItem {
+    width: 20%;
+    position: relative;
+}
+
+.box {
+    display: table;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.1;
+    z-index: 10;
+    
+}
+
+.boxSoldOut {
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -30px;
+    background-color: #bbb;
+    color: #fff;
+}
+
+.boxText {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 2px 8px 0;
+    letter-spacing: 1px;    
+}
+
+.clothes {
     height: 220px;
+    max-width: 100%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    opacity: 1;
+    transition: .2s;
+    overflow: hidden;
+}
+
+.clothes:hover {
+    opacity: .8;
+}
+
+.clothesSoldOut {
+    opacity: .5;
+}
+
+.clothesSoldOut:hover {
+    opacity: .4;
 }
 
 
 
+.name {
+    color: #000;
+    font-size: 14.4px;
+    line-height: 1.4;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #1a1a1a;
+    margin: 0 0 15px 0;
+}
+
+.footer {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.footerInner {
+    text-align: center;
+    width: 100%;
+}
+
+.footerItem {
+    color: #000;
+    text-decoration: none;
+}
+
+.footerItem a {
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,sans-serif;
+    cursor: url(images/cursor.cur),progress!important;    
+}
 
 
 

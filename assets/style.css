@@ -40,6 +40,13 @@ h1, h2, h3, h4, h5, h6 {
     right: 0;
     z-index: 1000;
     cursor: url(images/cursor.cur),progress!important;
+    
+}
+
+.headerMedia {
+    display: block;
+    padding: 20px 0;
+    background-color: #222;
 }
 
 .headerLogo {
@@ -77,6 +84,64 @@ h1, h2, h3, h4, h5, h6 {
 .navLink:hover {
     color: #000;
 }
+
+.navToggle {
+    width: 20px;
+    position: absolute;
+    padding: 5px 0;
+    top: 15px;
+    left: 30px;
+    z-index: 1;
+    display: none;
+}
+
+.navToggleItem {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+}
+
+.navToggleItem:before,
+.navToggleItem:after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    z-index: 1;
+}
+
+.navToggleItem:before {
+    top: -7px;
+}
+
+.navToggleItem:after {
+    bottom: -7px;
+}
+
+.nTmenu {
+    color: #fff;
+    position: relative;
+}
+
+.menu {
+    position: absolute;
+    right: 100%;
+    
+}
+
+.cart {
+    position: absolute;
+}
+
 
 .shop {
     display: flex;
@@ -127,13 +192,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .clothes {
-    height: 220px;
     max-width: 100%;
     margin-top: 30px;
     margin-bottom: 10px;
     opacity: 1;
     transition: .2s;
     overflow: hidden;
+    display: block;
+    height: auto;
 }
 
 .clothes:hover {
@@ -191,6 +257,37 @@ h1, h2, h3, h4, h5, h6 {
     cursor: url(images/cursor.cur),progress!important;    
 }
 
+
+@media (max-width: 990px) {
+    
+    .boxSoldOut {
+        top: 47%;
+    }
+}
+
+@media (max-width: 770px) {
+    
+    .clothes {
+        margin-bottom: 30px;
+    }
+    
+    .boxSoldOut {
+        top: 45%;
+    }
+    
+    .nav {
+        display: none;
+    }
+    
+    .navToggle {
+        display: block;
+    }
+    
+    .headerLogo {
+        display: none;
+    }
+    
+}
 
 
 

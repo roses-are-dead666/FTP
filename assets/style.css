@@ -44,10 +44,56 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .headerMedia {
-    display: block;
-    padding: 20px 0;
-    background-color: #222;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    background: #333;
+    width: 100%;
+    color: #fff;
 }
+
+/* MEDIA */
+.headerMenu {
+    display: block;
+    float: left;
+    cursor: url(images/cursor.cur),progress!important;
+}
+
+.iMenu {
+    font-size: 16px;
+    margin-left: 10px;
+    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,sans-serif;
+    cursor: url(images/cursor.cur),progress!important;
+}
+
+.headerCart {
+    display: block;
+    float: right;
+    cursor: url(images/cursor.cur),progress!important;
+}
+
+.contMedia {
+    padding: 0;
+    cursor: url(images/cursor.cur),progress!important;
+    display: none;
+}
+
+.mediaLogo {
+    display: none;
+    padding: 40px 0;
+    max-width: 100%;
+    cursor: pointer;
+    cursor: url(images/cursor.cur),progress!important;
+}
+
+.mediaLogo img {
+    margin: 0 auto;
+    display: block;
+    max-width: 200px;
+}
+
+/* MEDIA */
 
 .headerLogo {
     max-width: 100%;
@@ -85,68 +131,11 @@ h1, h2, h3, h4, h5, h6 {
     color: #000;
 }
 
-.navToggle {
-    width: 20px;
-    position: absolute;
-    padding: 5px 0;
-    top: 15px;
-    left: 30px;
-    z-index: 1;
-    display: none;
-}
-
-.navToggleItem {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    margin: auto;
-    display: block;
-    width: 100%;
-    height: 3px;
-    background-color: #fff;
-}
-
-.navToggleItem:before,
-.navToggleItem:after {
-    content: "";
-    width: 100%;
-    height: 3px;
-    position: absolute;
-    background-color: #fff;
-    left: 0;
-    z-index: 1;
-}
-
-.navToggleItem:before {
-    top: -7px;
-}
-
-.navToggleItem:after {
-    bottom: -7px;
-}
-
-.nTmenu {
-    color: #fff;
-    position: relative;
-}
-
-.menu {
-    position: absolute;
-    right: 100%;
-    
-}
-
-.cart {
-    position: absolute;
-}
-
-
 .shop {
     display: flex;
     justify-content: space-between;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .shopLast {
@@ -287,6 +276,22 @@ h1, h2, h3, h4, h5, h6 {
         display: none;
     }
     
+    .header {
+        display: none;
+    }
+    
+    .mediaLogo {
+        display: block;
+    }
+    
+    .contMedia {
+        display: block;
+    }
+    
+    .shopItem {
+        width: 50%;
+    }
+  
 }
 
 
